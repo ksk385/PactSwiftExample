@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85BD2DE61E7B329B0020AD56 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BD2DE51E7B329B0020AD56 /* Quick.framework */; };
 		A105FC921D05235000ACBFBD /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A105FC911D05235000ACBFBD /* Result.framework */; };
 		A150D89D1A830E41006E7C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D89C1A830E41006E7C2F /* AppDelegate.swift */; };
 		A150D89F1A830E41006E7C2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D89E1A830E41006E7C2F /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85BD2DE51E7B329B0020AD56 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		A105FC911D05235000ACBFBD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		A150D8971A830E41006E7C2F /* PactSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PactSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A150D89B1A830E41006E7C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,12 +71,21 @@
 				A1C5AC021A8B2E3C00EC6DF0 /* BrightFutures.framework in Frameworks */,
 				A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */,
 				A150D8C41A83195B006E7C2F /* Alamofire.framework in Frameworks */,
+				85BD2DE61E7B329B0020AD56 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85BD2DE41E7B329B0020AD56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85BD2DE51E7B329B0020AD56 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A150D88E1A830E41006E7C2F = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +97,7 @@
 				A150D8991A830E41006E7C2F /* PactSwiftExample */,
 				A150D8AF1A830E41006E7C2F /* PactSwiftExampleTests */,
 				A150D8981A830E41006E7C2F /* Products */,
+				85BD2DE41E7B329B0020AD56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,6 +276,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 			);
 			outputPaths = (
 			);
