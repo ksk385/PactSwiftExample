@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		85BD2DE61E7B329B0020AD56 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BD2DE51E7B329B0020AD56 /* Quick.framework */; };
+		85BD2DE81E7B33190020AD56 /* SeedClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD2DE71E7B33190020AD56 /* SeedClient.swift */; };
 		A105FC921D05235000ACBFBD /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A105FC911D05235000ACBFBD /* Result.framework */; };
 		A150D89D1A830E41006E7C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D89C1A830E41006E7C2F /* AppDelegate.swift */; };
 		A150D89F1A830E41006E7C2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D89E1A830E41006E7C2F /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		85BD2DE51E7B329B0020AD56 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		85BD2DE71E7B33190020AD56 /* SeedClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeedClient.swift; sourceTree = "<group>"; };
 		A105FC911D05235000ACBFBD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		A150D8971A830E41006E7C2F /* PactSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PactSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A150D89B1A830E41006E7C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		A150D8991A830E41006E7C2F /* PactSwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				85BD2DE71E7B33190020AD56 /* SeedClient.swift */,
 				A150D8BC1A831561006E7C2F /* HelloClient.swift */,
 				A150D89C1A830E41006E7C2F /* AppDelegate.swift */,
 				A150D89E1A830E41006E7C2F /* ViewController.swift */,
@@ -294,6 +297,7 @@
 				A150D89F1A830E41006E7C2F /* ViewController.swift in Sources */,
 				A150D8BD1A831561006E7C2F /* HelloClient.swift in Sources */,
 				A150D89D1A830E41006E7C2F /* AppDelegate.swift in Sources */,
+				85BD2DE81E7B33190020AD56 /* SeedClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
