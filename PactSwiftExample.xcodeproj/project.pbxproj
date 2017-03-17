@@ -16,7 +16,6 @@
 		A150D8A21A830E41006E7C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A150D8A01A830E41006E7C2F /* Main.storyboard */; };
 		A150D8A41A830E41006E7C2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A150D8A31A830E41006E7C2F /* Images.xcassets */; };
 		A150D8A71A830E41006E7C2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A150D8A51A830E41006E7C2F /* LaunchScreen.xib */; };
-		A150D8BD1A831561006E7C2F /* HelloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D8BC1A831561006E7C2F /* HelloClient.swift */; };
 		A150D8BF1A8315B9006E7C2F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8BE1A8315B9006E7C2F /* Alamofire.framework */; };
 		A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */; };
 		A150D8C41A83195B006E7C2F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8BE1A8315B9006E7C2F /* Alamofire.framework */; };
@@ -48,7 +47,6 @@
 		A150D8A61A830E41006E7C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A150D8AC1A830E41006E7C2F /* PactSwiftExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PactSwiftExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A150D8B11A830E41006E7C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A150D8BC1A831561006E7C2F /* HelloClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloClient.swift; sourceTree = "<group>"; };
 		A150D8BE1A8315B9006E7C2F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = Carthage/Build/iOS/PactConsumerSwift.framework; sourceTree = "<group>"; };
 		A1C3413D1D682F480067567A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				85BD2DE71E7B33190020AD56 /* SeedClient.swift */,
-				A150D8BC1A831561006E7C2F /* HelloClient.swift */,
 				A150D89C1A830E41006E7C2F /* AppDelegate.swift */,
 				A150D89E1A830E41006E7C2F /* ViewController.swift */,
 				A150D8A01A830E41006E7C2F /* Main.storyboard */,
@@ -295,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A150D89F1A830E41006E7C2F /* ViewController.swift in Sources */,
-				A150D8BD1A831561006E7C2F /* HelloClient.swift in Sources */,
 				A150D89D1A830E41006E7C2F /* AppDelegate.swift in Sources */,
 				85BD2DE81E7B33190020AD56 /* SeedClient.swift in Sources */,
 			);
