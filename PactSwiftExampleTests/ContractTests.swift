@@ -6,7 +6,6 @@ import PactConsumerSwift
 class ContractTests: QuickSpec {
     var seedProvider: MockService?
     var seedClient: SeedClient?
-    var helloClient: HelloClient?
 
     override func spec() {
         describe("Client Contract Tests") {
@@ -14,11 +13,11 @@ class ContractTests: QuickSpec {
             beforeEach {
                 self.seedProvider = MockService(provider: "Seed Provider", consumer: "Seed Consumer")
                 self.seedClient = SeedClient(baseUrl: self.seedProvider!.baseUrl)
-                self.helloClient = HelloClient(baseUrl: self.seedProvider!.baseUrl)
             }
 
             it ("gets some seeds with 200") {
                 self.seedProvider!
+                    .given("there are seeds")
                     .uponReceiving("a request for seeds")
                     .withRequest(method:.GET, path: "/seeds")
                     .willRespondWith(status: 200, headers: ["Content-Type": "application/json"],
