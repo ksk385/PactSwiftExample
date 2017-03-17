@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		85BD2DE61E7B329B0020AD56 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BD2DE51E7B329B0020AD56 /* Quick.framework */; };
 		85BD2DE81E7B33190020AD56 /* SeedClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD2DE71E7B33190020AD56 /* SeedClient.swift */; };
+		85BD2DEA1E7B339B0020AD56 /* ContractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD2DE91E7B339B0020AD56 /* ContractTests.swift */; };
 		A105FC921D05235000ACBFBD /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A105FC911D05235000ACBFBD /* Result.framework */; };
 		A150D89D1A830E41006E7C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D89C1A830E41006E7C2F /* AppDelegate.swift */; };
 		A150D89F1A830E41006E7C2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D89E1A830E41006E7C2F /* ViewController.swift */; };
 		A150D8A21A830E41006E7C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A150D8A01A830E41006E7C2F /* Main.storyboard */; };
 		A150D8A41A830E41006E7C2F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A150D8A31A830E41006E7C2F /* Images.xcassets */; };
 		A150D8A71A830E41006E7C2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A150D8A51A830E41006E7C2F /* LaunchScreen.xib */; };
-		A150D8B31A830E41006E7C2F /* PactSwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D8B21A830E41006E7C2F /* PactSwiftExampleTests.swift */; };
 		A150D8BD1A831561006E7C2F /* HelloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A150D8BC1A831561006E7C2F /* HelloClient.swift */; };
 		A150D8BF1A8315B9006E7C2F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8BE1A8315B9006E7C2F /* Alamofire.framework */; };
 		A150D8C21A8315FE006E7C2F /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */; };
@@ -37,6 +37,7 @@
 /* Begin PBXFileReference section */
 		85BD2DE51E7B329B0020AD56 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		85BD2DE71E7B33190020AD56 /* SeedClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeedClient.swift; sourceTree = "<group>"; };
+		85BD2DE91E7B339B0020AD56 /* ContractTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractTests.swift; sourceTree = "<group>"; };
 		A105FC911D05235000ACBFBD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		A150D8971A830E41006E7C2F /* PactSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PactSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A150D89B1A830E41006E7C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		A150D8A61A830E41006E7C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A150D8AC1A830E41006E7C2F /* PactSwiftExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PactSwiftExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A150D8B11A830E41006E7C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A150D8B21A830E41006E7C2F /* PactSwiftExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PactSwiftExampleTests.swift; sourceTree = "<group>"; };
 		A150D8BC1A831561006E7C2F /* HelloClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloClient.swift; sourceTree = "<group>"; };
 		A150D8BE1A8315B9006E7C2F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		A150D8C11A8315FE006E7C2F /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = Carthage/Build/iOS/PactConsumerSwift.framework; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		A150D8AF1A830E41006E7C2F /* PactSwiftExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				A150D8B21A830E41006E7C2F /* PactSwiftExampleTests.swift */,
+				85BD2DE91E7B339B0020AD56 /* ContractTests.swift */,
 				A150D8B01A830E41006E7C2F /* Supporting Files */,
 			);
 			path = PactSwiftExampleTests;
@@ -305,7 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A150D8B31A830E41006E7C2F /* PactSwiftExampleTests.swift in Sources */,
+				85BD2DEA1E7B339B0020AD56 /* ContractTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
