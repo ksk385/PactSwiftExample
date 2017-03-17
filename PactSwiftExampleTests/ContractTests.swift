@@ -17,7 +17,7 @@ class ContractTests: QuickSpec {
                 self.helloClient = HelloClient(baseUrl: self.seedProvider!.baseUrl)
             }
 
-            it ("conforms to contract for seeds") {
+            it ("gets some seeds with 200") {
                 self.seedProvider!
                     .uponReceiving("a request for seeds")
                     .withRequest(method:.GET, path: "/seeds")
@@ -34,18 +34,19 @@ class ContractTests: QuickSpec {
                 }
             }
 
-            it ("says hello") {
+            it ("does not find seeds") {
                 self.seedProvider!
-                    .uponReceiving("a request for hello")
-                    .withRequest(method:.GET, path: "/sayHello")
-                    .willRespondWith(status: 200, headers: ["Content-Type": "application/json"],
-                                     body: ["reply": "Hello"]
+                    .given("there are no seeds")
+                    .uponReceiving("a request for seeds")
+                    .withRequest(method:.GET, path: "/seeds")
+                    .willRespondWith(status: 404, headers: ["Content-Type": "application/json"],
+                                     body: ["error": "not found"]
                 )
 
                 self.seedProvider!.run {
                     (testComplete) -> Void in
-                    self.helloClient!.sayHello { (response) in
-                        expect(response).to(equal("Hello"))
+                    self.seedClient!.getSeeds { (response) in
+                        expect(response).to(equal("not found"))
                         testComplete()
                     }
                 }

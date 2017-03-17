@@ -12,7 +12,12 @@ open class SeedClient {
         Alamofire.request("\(baseUrl)/seeds")
             .responseJSON { (response) in
                 if let jsonResult = response.result.value as? Dictionary<String, AnyObject> {
-                    callback(jsonResult["seeds"] as! String)
+                    if let result = jsonResult["seeds"] as? String {
+                        callback(result)
+                    }
+                    if let result = jsonResult["error"] as? String {
+                        callback(result)
+                    }
                 }
         }
     }
